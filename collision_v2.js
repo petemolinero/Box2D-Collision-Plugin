@@ -58,7 +58,7 @@ ig.Box2DGame.inject({
             }
         };
 
-        var listener = new b2.ContactListener();
+        var listener = new Box2D.Dynamics.b2ContactListener();
         listener.Add = handleContact;      // on first contact
         listener.Persist = handleContact;  // on subsequent contacts
 
